@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="/api/auth/login" method="post">
+    <div class="container">
+        <h1>Вход</h1>
+        <label>Имя пользователя:</label><br>
+        <input type="text" placeholder="Введите имя" name="login_username" id="login_username" required>
+    </div>
+    
+    <div class="passwrd">
+        <label>Пароль:</label><br>
+        <input type="password" placeholder="Введите пароль" name="login_password" id="login_password" required>
+    </div>
+
+    <button class="login" type="submit" id="login_submit_btn" placeholder="Войти">Войти</button>
+    <button type="button" id="page_login_redirect_button" class="page_login_redirect_registration">Зарегистрироваться</button>
+</form>
+
+
+<script src="main.js"></script>
+</body>
+</html>
+
+    

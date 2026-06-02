@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="/api/auth/register" method="post">
+    <div class="container">
+        <h1>Регистрация</h1>
+        <label>Имя пользователя:</label><br>    
+        <input type="text" placeholder="Введите имя" name="username" id="username">
+    </div>
+
+    <div class="email">
+        <label>Email:</label><br>
+        <input type="text" placeholder="Введите электронный адрес" name="email" id="email">
+    </div>
+
+    <div class="passwrd">
+        <label>Пароль:</label><br>
+        <input type="password" placeholder="Введите пароль" name="password" id="password">
+    </div>
+
+    <div class="accept">
+        <label>Подтверждение пароля:</label><br>
+        <input type="password" placeholder="Подтвердите пароль" name="accept_password" id="accept_password">
+    </div>
+
+    <button class="registration" type="submit" id="submit_btn" placeholder="зарегистрироваться">Зарегистрироваться</button>
+    <button type="button" id="page_register_redirect_button">Перейти на страницу входа</button>
+</form>
+
+
+<script src="main.js"></script>
+</body>
+</html>
+
+    
+        
